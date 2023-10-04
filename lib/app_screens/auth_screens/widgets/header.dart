@@ -26,7 +26,7 @@ class AppHeader extends StatelessWidget {
                   alignment: Alignment.center,
                   height: 2.5.h,
                   width: 2.5.h,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                       shape: BoxShape.circle, color: Colors.white),
                   child: Text(
                     "S",
@@ -40,7 +40,7 @@ class AppHeader extends StatelessWidget {
                   alignment: Alignment.center,
                   height: 2.5.h,
                   width: 2.5.h,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                       shape: BoxShape.circle, color: Colors.white),
                   child: Text(
                     "W",
@@ -54,7 +54,7 @@ class AppHeader extends StatelessWidget {
                   alignment: Alignment.center,
                   height: 2.5.h,
                   width: 2.5.h,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                       shape: BoxShape.circle, color: Colors.white),
                   child: Text(
                     "A",
@@ -68,7 +68,7 @@ class AppHeader extends StatelessWidget {
                   alignment: Alignment.center,
                   height: 2.5.h,
                   width: 2.5.h,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                       shape: BoxShape.circle, color: Colors.white),
                   child: Text(
                     "P",

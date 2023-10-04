@@ -44,10 +44,10 @@ class _SwapScreenContentsState extends State<SwapScreenContents>
   }
 
   void btctoethConvertor(String value, bool isBTC) {
-    if (isBTC) {
+    if (isBTC && value != "") {
       ethController.text =
           (double.parse(value) / 0.06).toStringAsFixed(2).toString();
-    } else {
+    } else if (value != "") {
       btcController.text =
           (double.parse(value) * 0.06).toStringAsFixed(2).toString();
     }
@@ -333,7 +333,7 @@ class _SwapScreenContentsState extends State<SwapScreenContents>
                     btctoethConvertor(value, true);
                     setState(() {});
                   },
-                  decoration: InputDecoration(border: InputBorder.none),
+                  decoration: const InputDecoration(border: InputBorder.none),
                   style: TextStyle(
                       fontSize: 12.sp,
                       color: appTextColor,
@@ -477,7 +477,7 @@ class _SwapScreenContentsState extends State<SwapScreenContents>
                     btctoethConvertor(value, false);
                     setState(() {});
                   },
-                  decoration: InputDecoration(border: InputBorder.none),
+                  decoration: const InputDecoration(border: InputBorder.none),
                   style: TextStyle(
                       fontSize: 12.sp,
                       color: appTextColor,

@@ -56,6 +56,7 @@ class MyApp extends StatelessWidget {
       child: Sizer(
         builder: (context, orientation, deviceType) {
           return MaterialApp.router(
+            debugShowCheckedModeBanner: false,
             routerConfig: _appRoute,
           );
         },

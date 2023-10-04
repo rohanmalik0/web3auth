@@ -83,10 +83,10 @@ class _LoginScreenState extends State<LoginScreen> {
                                   context)
                               .add(ChangeHomeBottomNavigationIndex(0));
                           Routes.updateHomeBottomNavigation(0);
+                          // ignore: unused_local_variable
                           final Web3AuthResponse response =
                               await Web3AuthFlutter.login(LoginParams(
                                   loginProvider: Provider.facebook));
-                          log(response.userInfo.toString() + "failed");
                         },
                         child: Image.asset(
                           AppImages.facebookIcon,

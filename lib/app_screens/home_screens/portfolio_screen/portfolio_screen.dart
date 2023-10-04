@@ -7,7 +7,6 @@ import 'package:dextrlabstask/buisness_logic/PortfolioBloc/portfolio_bloc.dart';
 import 'package:dextrlabstask/constants/app_colors.dart';
 import 'package:dextrlabstask/constants/app_images.dart';
 import 'package:dextrlabstask/constants/app_strings.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sizer/sizer.dart';

@@ -3,10 +3,7 @@ import 'dart:developer';
 import 'dart:io';
 
 import 'package:dextrlabstask/app_screens/home_screens/home_screen.dart';
-import 'package:dextrlabstask/bottom_nav_bar/routes.dart';
-import 'package:dextrlabstask/buisness_logic/HomeBottomNavigationBloc/home_bottom_navigator_bar_index_bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:web3auth_flutter/enums.dart';
 import 'package:web3auth_flutter/input.dart';
 import 'package:web3auth_flutter/output.dart';
@@ -19,9 +16,7 @@ class AuthenticationRepository {
       try {
         Navigator.of(context, rootNavigator: true)
             .push(MaterialPageRoute(builder: (_) => const HomeScreeContents()));
-        BlocProvider.of<HomeBottomNavigatorBarIndexBloc>(context)
-            .add(ChangeHomeBottomNavigationIndex(0));
-        Routes.updateHomeBottomNavigation(0);
+
         log("in method");
         final Web3AuthResponse response = await method();
         log(response.userInfo.toString());
@@ -68,7 +63,6 @@ class AuthenticationRepository {
     final String ed255199PrivKey = await Web3AuthFlutter.getEd25519PrivKey();
 
     // call getUserInfo() function to get user information like name, email, verifier, verifierId etc.
-    final TorusUserInfo userInfo = await Web3AuthFlutter.getUserInfo();
-    log(userInfo.toString());
+    // final TorusUserInfo userInfo = await Web3AuthFlutter.getUserInfo();
   }
 }

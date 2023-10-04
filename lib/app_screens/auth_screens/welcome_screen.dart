@@ -42,7 +42,7 @@ class _WelcomScreenContentsState extends State<WelcomScreenContents> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-          decoration: BoxDecoration(gradient: backgroundGradient),
+          decoration: const BoxDecoration(gradient: backgroundGradient),
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 6.w, vertical: 2.h),
             child: ListView(
@@ -79,7 +79,7 @@ class _WelcomScreenContentsState extends State<WelcomScreenContents> {
                         alignment: Alignment.center,
                         height: 17.h,
                         width: 17.h,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Colors.white,
                           shape: BoxShape.circle,
                         ),

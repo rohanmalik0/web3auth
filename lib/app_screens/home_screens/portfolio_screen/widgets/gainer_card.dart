@@ -1,7 +1,6 @@
 import 'package:dextrlabstask/constants/app_colors.dart';
 import 'package:dextrlabstask/constants/app_images.dart';
 import 'package:dextrlabstask/constants/app_strings.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
@@ -45,7 +44,7 @@ class GainerCard extends StatelessWidget {
                     color: appTextColor,
                     fontFamily: AppStrings.regular),
               ),
-              Spacer(),
+              const Spacer(),
               Text(
                 "\$22.41",
                 style: TextStyle(
@@ -65,7 +64,7 @@ class GainerCard extends StatelessWidget {
                 padding: EdgeInsets.symmetric(vertical: 0.2.h, horizontal: 2.w),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    color: Color(0xFF22272b)),
+                    color: const Color(0xFF22272b)),
                 child: Text(
                   "SOLANA",
                   style: TextStyle(

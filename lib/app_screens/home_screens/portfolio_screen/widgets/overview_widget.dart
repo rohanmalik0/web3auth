@@ -18,7 +18,7 @@ class OverViewWidget extends StatelessWidget {
             width: 45.w,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(25),
-              color: Color(0xFF64fee2),
+              color: const Color(0xFF64fee2),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -44,7 +44,7 @@ class OverViewWidget extends StatelessWidget {
                     height: 4.h,
                     width: 15.w,
                     decoration: BoxDecoration(
-                        color: Color(0xFF57d9c1),
+                        color: const Color(0xFF57d9c1),
                         borderRadius: BorderRadius.circular(40)),
                     child: Text(
                       "+3.46%",
@@ -62,7 +62,7 @@ class OverViewWidget extends StatelessWidget {
           width: 45.w,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(25),
-            color: Color(0xFF3640f0),
+            color: const Color(0xFF3640f0),
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -88,7 +88,7 @@ class OverViewWidget extends StatelessWidget {
                   height: 4.h,
                   width: 15.w,
                   decoration: BoxDecoration(
-                      color: Color(0xFF3138cc),
+                      color: const Color(0xFF3138cc),
                       borderRadius: BorderRadius.circular(40)),
                   child: Text(
                     "+3.46%",

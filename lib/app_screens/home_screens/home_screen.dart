@@ -35,7 +35,7 @@ class HomeScreeContents extends StatelessWidget {
                     margin: EdgeInsets.symmetric(
                       horizontal: 6.w,
                     ),
-                    selectedItemColor: Color(0xFF6163c9),
+                    selectedItemColor: const Color(0xFF6163c9),
                     borderRadius: 40,
                     onTap: (val) {
                       Routes.updateHomeBottomNavigation(val);

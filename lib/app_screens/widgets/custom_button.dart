@@ -32,7 +32,7 @@ class CustomButton extends StatelessWidget {
                   color: appPrimaryColor.withOpacity(0.8),
                   spreadRadius: 2,
                   blurRadius: 2,
-                  offset: Offset(-1, 2))
+                  offset: const Offset(-1, 2))
             ]),
         child: Text(
           buttonName,

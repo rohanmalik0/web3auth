@@ -1,6 +1,5 @@
 import 'package:dextrlabstask/app_screens/auth_screens/login_screen.dart';
 import 'package:dextrlabstask/app_screens/auth_screens/welcome_screen.dart';
-import 'package:dextrlabstask/app_screens/home_screens/home_screen.dart';
 import 'package:dextrlabstask/app_screens/home_screens/portfolio_screen/portfolio_screen.dart';
 import 'package:dextrlabstask/app_screens/home_screens/swap_screen/swap_screen.dart';
 import 'package:dextrlabstask/app_screens/home_screens/wallet_screen/wallet_screen.dart';
@@ -47,7 +46,8 @@ class Routes {
     if (settings.name == swapScreen) {
       return MaterialPageRoute(builder: (context) => const SwapScreen());
     }
-    return MaterialPageRoute(builder: (context) => const PortfolioScreen());
+    return MaterialPageRoute(
+        builder: (context) => const PortfolioScreenContents());
   }
 
   static Route<dynamic> generatePortfolioRoutes(RouteSettings settings) {
